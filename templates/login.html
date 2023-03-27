@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AAA</title>
+    <style>
+        h1 {font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 34px;
+            letter-spacing: -0.6px;
+            word-spacing: 2px;
+            color: #530915;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-align: center;
+            text-transform: none;
+            text-shadow: 2px 2px 2px rgba(28,110,164,0.80);}
+        h2 {color:#ececec;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            letter-spacing: 0.4px;
+            word-spacing: 0px;
+            font-weight: 700;
+            text-decoration: none solid rgb(68, 68, 68);
+            font-style: normal;
+            font-variant: normal;
+            text-align: center;
+            text-transform: none;}
+        body {
+            color:#ffc93c;
+            align-self: center;
+            font-family: Georgia, serif;
+            font-size: 14px;
+            background:  #a41e30;
+            background: -moz-linear-gradient(left, #a41e30 0%, #db1010 50%, #560404 100%);
+            background: -webkit-linear-gradient(left, #a41e30 0%, #db1010 50%, #560404 100%);
+            background: linear-gradient(to right,#a41e30 0%, #db1010 50%, #560404 100%);
+        }
+        .loguear{
+            width: 400px;
+            height: 340px;
+            background: #ed1414;
+            margin: auto;
+            margin-top: 130px;
+            box-shadow: 7px 13px 37px #6c0c0c;
+            padding: 20px 30px;
+            border-top: 4px solid #000;
+            color: white;
+        }
+        .loguear h5{
+            margin: 0;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid;
+            font-size: 20px;
+        }
+        .titulo{
+            margin: auto;
+            text-align: auto;
+        }
+        .loguear p{
+            height: 40px;
+            text-align: center;
+            border-bottom: 1px;
+        }
+        .loguear a{
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .loguear a:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <h3>{{mensaje}}</h3>
+
+<section class = "titulo">
+    <h2>Login</h2>
+</section>
+<section class = "loguear">
+    <form action="" method="POST">
+        <h5>Introduzca su usuario y contraseña</h5>
+        <div class="form-group">
+            <input class = "form-control" type="text" id="username" name="username"  placeholder="usuario" required><br>
+        </div>
+        <div class="form-group">
+            <input class = "form-control" type="password" id="password" name="password" placeholder="contraseña" required><br>
+        </div>
+        <button class = "btn btn-light" type="submit" name="enviar" value="Enviar">Ingresar</button>
+        <p><a href = "ayuda">¿Tienes dudas sobre el funcionamiento de la aplicacion?</a></p>
+    </form>
+</section>
+</body>
+</html>

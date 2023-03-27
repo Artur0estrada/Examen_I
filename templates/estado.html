@@ -1,0 +1,42 @@
+{%  extends "base.html"  %}
+{% block title %}Informe
+{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block body %}
+<div>
+            <div>
+                <h1>Informe</h1>
+
+            </div>
+            <div>
+                <table class = "informe" border="1">
+                    <thead>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Bicicleta</td>
+                            <td>Telefono</td>
+                            <td>Hora</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Arturo</td>
+                            <td>3</td>
+                            <td>6442251365</td>
+                            <td>5:35 PM</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" align="right">A pagar: $200</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    <div class="imprimir">
+        <input type="button" class="btn btn-light" value="Imprimir reporte" onClick="window.print()">
+    </div>
+{% endblock %}

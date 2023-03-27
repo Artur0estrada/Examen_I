@@ -1,0 +1,35 @@
+{%  extends "base.html"  %}
+{% block title %}Login
+{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block body %}
+<style>
+    body{
+        align-self: center;
+    }
+</style>
+<body>
+    <form action="" method="POST">
+        <section class = "loguear2">
+            <h5>Crear cuenta</h5>
+            <input class = "textos" type="text" id="username" name="username"  placeholder="Nombre"><br>
+            <input class = "textos" type="password" id="password" name="password" placeholder="Primer Apellido"><br>
+            <input class = "textos" type="text" id="first_name" name="first_name"  placeholder="Segundo Apellido"><br>
+            <input class = "textos" type="text" id="last_name" name="last_name"  placeholder="Correo"><br>
+            <input class = "textos" type="text" id="phone" name="phone"  placeholder="Numero de telefono"><br>
+            <p>Bicicletas Disponibles</p>
+            <input id="pregunta" name = "pregunta" list="pregunta_a" step="1800" required><br>
+            <datalist id="pregunta_a">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+            </datalist>
+            <br>
+            <button class = "boton" type="submit" name="enviar" value="Enviar">Registrar renta</button>
+        </section>
+    </form>
+</body>
+    
+{% endblock %}
